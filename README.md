@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 ## OUTPUT
+![Screenshot (136)](https://github.com/Jayalakshm1/ImplicitIntent-MAD/assets/130430542/211e7aba-238b-43d8-8f8e-0f00dd9d7164)
 
 
 
