@@ -1,22 +1,21 @@
-# Ex.No:3a Develop program to create a text field and a button “Navigate”. When you enter “www.gmail.com” and press navigate button it should open google page using Implicit Intents.
-
-
+# Ex.No:3 Develop program to create a text field and a button “Navigate”. When you enter “www.gmail.com” and press navigate button it should open google page using Implicit Intents.
 ## AIM:
-
 To create a navigate button using Implicit Intent to display the gmail page using Android Studio.
-
 ## EQUIPMENTS REQUIRED:
-
 Latest Version Android Studio
-
 ## ALGORITHM:
-
-
-
-## PROGRAM:
 ```
-activity_main.xml
-
+Step 1: Open Android Stdio and then click on File -> New -> New project.
+Step 2: Then type the Application name as ImplicitIntent and click Next.
+Step 3: Then select the Minimum SDK as shown below and click Next.
+Step 4: Then select the Empty Activity and click Next. Finally click Finish.
+Step 5: Design layout in activity_main.xml.
+Step 6: Display message give in MainActivity file.
+Step 7: Save and run the application.
+```
+## PROGRAM:
+## activity_main.xml
+```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,7 +23,6 @@ activity_main.xml
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,7 +34,6 @@ activity_main.xml
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.373" />
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
@@ -50,7 +47,6 @@ activity_main.xml
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -61,15 +57,12 @@ activity_main.xml
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-MainActivity.java
-
+```
+## MainActivity.java
+```
 package com.example.implicitintent;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -78,19 +71,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         EditText editText;
         Button button;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         button = findViewById(R.id.button);
         editText = (EditText) findViewById(R.id.editText);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -101,15 +89,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
 ```
-
 ## OUTPUT
 ![Screenshot (136)](https://github.com/Jayalakshm1/ImplicitIntent-MAD/assets/130430542/211e7aba-238b-43d8-8f8e-0f00dd9d7164)
-
-
-
-
 ## RESULT
 Thus a Simple Android Application create a navigate button using Implicit Intent to display the gmail page using Android Studio is developed and executed successfully.
 
